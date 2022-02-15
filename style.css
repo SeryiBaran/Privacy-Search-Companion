@@ -1,0 +1,23 @@
+body { 
+    background-color: rgb(206, 206, 206);
+}
+
+#cr, #cc, #cw, #cq {
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+}
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    border: 2px solid #000000;
+    background-color: rgb(169, 232, 248);
+}
+button:hover {
+    border: 2px solid #000000;
+    background-color: #fc5c5c;
+}
+
+a {
+    target: blank;
+} 

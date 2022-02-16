@@ -7,6 +7,6 @@ function AnswerScrapper() {
     //  document.getElementById("sp").innerHTML = `<a target="blank_" href="https://www.startpage.com/?q=${answer}">Ответ</a>` + " - Startpage" + `img src="https://cdn.iconscout.com/icon/free/png-64/magnifier-1439746-1214318.png">`;
         document.getElementById("sc").innerHTML = `<a target="blank_" href="https://swisscows.com/web?query=${answer}">Ответ</a>` + " - Swisscows " + `<img src="https://cdn.iconscout.com/icon/free/png-64/cow-212-1115892.png">`;
         document.getElementById("lk").innerHTML = `<a target="blank_" href="https://www.lukol.com/s.php?q=${answer}">Ответ</a>` + " - Lukol " + `<img src="https://cdn.iconscout.com/icon/free/png-64/hacker-14-448404.png">`;
-
+        document.getElementById("sx").innerHTML = `<a target="blank_" href="https://searx.be/search?q=${answer}">Ответ</a>` + " - SearXNG " + `<img src="https://cdn.iconscout.com/icon/free/png-64/magnifier-1439746-1214318.png">`;
         console.log(`${answer}`);
     }

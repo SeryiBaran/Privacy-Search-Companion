@@ -23,4 +23,5 @@ function AnswerScrapper() {
     }
     // window.location.replace() - поменяет текущую страницу на ту страницу поисковика, который вы выбрали
     // document.getElementById("ddg").innerHTML = `<iframe src="https://duckduckgo.com/?t=ffab&q=${Answer}" height="500px" width="900px"></iframe>`;
+    // В будущем страница для поиска будет открываться внутри страницы для запроса
 }

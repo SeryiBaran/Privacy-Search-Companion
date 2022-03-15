@@ -24,7 +24,7 @@ function AnswerScrapper() {
 
     }
     else {
-        return 0
+        alert("Вы неправильно ввели название поисковой системы, попробуйте еще раз.");
     }
     // window.location.replace() - поменяет текущую страницу на ту страницу поисковика, который вы выбрали
     // document.getElementById("ddg").innerHTML = `<iframe src="https://duckduckgo.com/?t=ffab&q=${Answer}&t=ffab&atb=v295-1&ia=web" height="500px" width="900px"></iframe>`;

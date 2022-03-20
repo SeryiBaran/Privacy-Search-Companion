@@ -10,4 +10,5 @@
 <li>Swisscows</li>
 <li>SearXNG</li>
 <li>Lukol</li>
+<li>Brave Search</li>
 </ul>

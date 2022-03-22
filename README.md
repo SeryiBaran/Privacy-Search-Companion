@@ -17,10 +17,10 @@
 </ul>
 <h2>Пример использования:</h2>
 
-![изображение](https://user-images.githubusercontent.com/88831850/159583756-8cd4a9e2-430e-4e53-92b8-85a7d7aebdab.png)
+![image](https://user-images.githubusercontent.com/44779327/159589427-0a9bb308-f9f1-4323-889a-17d20750cedd.png)
 
 **Нажимаем поисковик, который хотим использовать** 
 
-![изображение](https://user-images.githubusercontent.com/88831850/159583801-79de7f02-c800-4f64-93ca-a1a7dbf0bcd6.png)
+![image](https://user-images.githubusercontent.com/44779327/159589383-7b896d3d-0899-43d2-badf-473b1f63aa45.png)
 
 **Итоговый результат**

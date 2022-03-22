@@ -12,6 +12,7 @@
 <li>SearXNG</li>
 <li>Lukol</li>
 <li>Brave Search</li>
+<li>Peekier</li>
 </ul>
 <h2>Пример использования:</h2>
 

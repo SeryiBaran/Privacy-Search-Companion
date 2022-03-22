@@ -14,3 +14,11 @@
 <li>Brave Search</li>
 </ul>
 <h2>Пример использования:</h2>
+
+![изображение](https://user-images.githubusercontent.com/88831850/159553199-1fd83fe4-df5f-4fae-b620-85140947e15c.png)
+
+**Нажимаем поисковик, который хотим использовать** 
+
+![изображение](https://user-images.githubusercontent.com/88831850/159553485-7cf6bcc4-4a75-4007-8f41-5204d6de6bd3.png)
+
+**Итоговый результат**

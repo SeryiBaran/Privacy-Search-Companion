@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://cdn.iconscout.com/icon/free/png-64/hacker-3875926-3217487.png" alt="Logo"></img>
+  <img src="images/logo.png" alt="Logo"></img>
 </p>
 <h1 align="center">Answerius</h1>
 <p><b>Search engine</b></p>

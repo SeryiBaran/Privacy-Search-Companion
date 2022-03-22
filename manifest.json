@@ -3,7 +3,6 @@
   "version":"0.1",
   "manifest_version": 2,
   "description":"New anon search engine",
-  
   "content_scripts": [
     {
       "matches": ["https://swisscows.com/*", "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*"],
@@ -23,5 +22,6 @@
       "https://*/*"
       ],
   "icons":{
+    "16": "images/logo.png"
   }
 }

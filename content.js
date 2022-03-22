@@ -1,57 +1,36 @@
-var div = document.createElement( 'div' );
-var e    = document.createElement('a');
-e.href =  "https://search.brave.com/search" + window.location.search;
-e.title = 'это ссылка';
-document.body.appendChild( div );
+let div = document.createElement('div');
+let e = document.createElement('a');
+e.href = "https://search.brave.com/search" + window.location.search;
+e.title = 'Brave Search';
+document.body.appendChild(div);
 div.id = 'brave';
 e.appendChild(document.createTextNode('brave'));
 div.appendChild(e);
 
 
-
-var div2 = document.createElement( 'div' );
-var e2    = document.createElement('a');
-
-
-e2.href =  "https://www.lukol.com/s.php" + window.location.search;
-
-e2.title = 'это ссылка';
-//append all elements
-document.body.appendChild( div2 );
-//set attributes for div
-div2.id = 'myDivId2';
-div2.style.position = 'fixed';
-div2.style.bottom = '40px';
-div2.style.left = '80%';
-div2.style.width = '100px';   
-div2.style.height = '35px';
-div2.style.backgroundColor = 'blue';
-
-
+let div2 = document.createElement('div');
+let e2 = document.createElement('a');
+e2.href = "https://www.lukol.com/s.php" + window.location.search;
+e2.title = 'Lukol';
 e2.appendChild(document.createTextNode('lukol'));
 div2.appendChild(e2);
 
 
-
-
-var div3 = document.createElement( 'div' );
-var e3    = document.createElement('a');
-
-
-e3.href =  "https://duckduckgo.com/" + window.location.search;
-console.log(window.location);
-e3.title = 'это ссылка';
-//append all elements
-document.body.appendChild( div3 );
-//set attributes for div
-div3.id = 'myDivId3';
-div3.style.position = 'fixed';
-div3.style.bottom = '60px';
-div3.style.left = '80%';
-div3.style.width = '100px';   
-div3.style.height = '35px';
-div3.style.backgroundColor = 'green';
-
-
+let div3 = document.createElement('div');
+let e3 = document.createElement('a');
+e3.href = "https://duckduckgo.com/" + window.location.search;
+e3.title = 'DuckDuckGo';
+document.body.appendChild(div3);
+div3.id = 'DDG';
 e3.appendChild(document.createTextNode('DDG'));
+div3.appendChild(e3);
+
+
+let div4 = document.createElement('div');
+let e3 = document.createElement('a');
+e3.href = "https://searx.be/search" + window.location.search;
+e3.title = 'SearXNG';
+document.body.appendChild(div3);
+div3.id = 'SearXNG';
+e3.appendChild(document.createTextNode('SearXNG'));
 div3.appendChild(e3);

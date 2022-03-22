@@ -1,0 +1,23 @@
+{
+  "name":"poop",
+  "version":"0.1",
+  "manifest_version":2,
+  "description":"shitty app I'm making",
+  
+  "content_scripts": [
+    {
+      "matches": ["https://swisscows.com/*", "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*"],
+      "js": ["content.js"],
+      "css": [ "buttons.css" ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions":[
+      "contextMenus", 
+      "tabs",
+      "http://*/*",
+      "https://*/*"
+      ],
+  "icons":{
+  }
+}

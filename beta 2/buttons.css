@@ -1,0 +1,30 @@
+#myDivId {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 10px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+}
+#myDivId2 {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 30px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+
+}
+
+#MyDivId3 {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 50px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+
+}

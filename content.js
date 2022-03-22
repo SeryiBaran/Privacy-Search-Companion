@@ -36,3 +36,8 @@ document.body.appendChild(div4);
 div4.id = 'SearXNG';
 e4.appendChild(document.createTextNode('SearXNG'));
 div4.appendChild(e4);
+
+/*
+if(window.location.host == "peekier.com"){
+
+}*/

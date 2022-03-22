@@ -8,3 +8,33 @@
     background-color: black;
 }
 
+#lukol {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 30px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+}
+
+#ddg {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 60px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+}
+
+#SearXNG {
+    font-size: xx-large;
+    position:fixed;
+    bottom: 90px;
+    left: 80%;
+    width: 100px;
+    height: 35px;
+    background-color: black;
+}
+

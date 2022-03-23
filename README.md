@@ -1,6 +1,12 @@
 <p align="center">
   <img src="images/logo.png" alt="Logo"></img>
+
 </p>
+<p align="center">
+  <a href="https://addons.mozilla.org/addon/answerius/"><img src="https://img.shields.io/amo/v/answerius?style=flat-square" alt="Badge"></img></a>
+  <a href="https://addons.mozilla.org/addon/answerius/"><img src="https://img.shields.io/amo/users/answerius?style=flat-square" alt="Badge"></img></a>
+</p>
+
 <h1 align="center">Answerius</h1>
 <p><b>Search engine</b></p>
 <p>Расширение, которое поможет сделать запрос любой информации через поисковики, которые уважают вашу <b>приватность и анонимность</b>.</p>

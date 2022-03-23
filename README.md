@@ -39,3 +39,4 @@
   - [ ] Swisscows
   - [ ] Peekier
   - [ ] Ecosia
+  - [ ] Gigablast

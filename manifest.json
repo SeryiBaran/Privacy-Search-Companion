@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://swisscows.com/*", "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*"],
+      "matches": ["https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/*", "https://www.google.com/*"],
       "js": ["content.js"],
       "css": [ "buttons.css" ]
     }

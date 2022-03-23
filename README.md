@@ -19,10 +19,10 @@
 
 <h2>Пример использования:</h2>
 
-![image](https://user-images.githubusercontent.com/44779327/159589427-0a9bb308-f9f1-4323-889a-17d20750cedd.png)
+![image](images/screen1.png)
 
 **Нажимаем поисковик, который хотим использовать** 
 
-![image](https://user-images.githubusercontent.com/44779327/159589383-7b896d3d-0899-43d2-badf-473b1f63aa45.png)
+![image](images/screen2.png)
 
 **Итоговый результат**

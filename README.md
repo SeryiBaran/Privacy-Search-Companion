@@ -26,3 +26,16 @@
 ![image](images/screen2.png)
 
 **Итоговый результат**
+
+<h2>ToDo</h2>
+
+1. Добавить popup с функцией сокрытия кнопок
+2. Добавить кнопку для запроса на странице Yandex
+3. Добавить поддержку выдачи ответов из:
+  - [ ] Startpage 
+  - [ ] SearX 
+  - [x] SearXNG 
+  - [ ] Qwant
+  - [ ] Swisscows
+  - [ ] Peekier
+  - [ ] Ecosia

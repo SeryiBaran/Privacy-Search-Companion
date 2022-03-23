@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Answerius",
-  "version": "1.0",
+  "version": "1.1.0.0",
   "description":"New anon search engine",
   "icons": {
     "16": "images/logo_16.png"
@@ -11,9 +11,8 @@
       "js": [
         "content.js"
       ],
-      "matches": [
-        "http://*/*",
-        "https://*/*", "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/*", "https://www.google.com/*"
+      "matches": [ 
+         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/*", "https://www.google.com/*"
       ],
       "css": [ 
         "buttons.css" 

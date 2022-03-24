@@ -1,46 +1,51 @@
 let query = "";
 
-if(window.location.host == "search.brave.com"){
-    console.log("ЭТО brave");
+if (window.location.host == "search.brave.com") {
+    console.log("ЭТО Brave");
     query = document.getElementById('searchbox').value;
     
 }
 
-if(window.location.host == "www.lukol.com"){
-    console.log("ЭТО lukol");
+if (window.location.host == "www.lukol.com") {
+    console.log("ЭТО Lukol");
     query = document.getElementById('q').value;
     
 }
 
-if(window.location.host == "duckduckgo.com"){
-    console.log("ЭТО DDG");
+if (window.location.host == "duckduckgo.com") {
+    console.log("ЭТО DuckDuckGo");
     query = document.getElementById('search_form_input').value;
     
 }
 
-if(window.location.host == "searx.be"){
-    console.log("ЭТО searxng");
+if (window.location.host == "searx.be") {
+    console.log("ЭТО SearXNG");
     query = document.getElementById('q').value;
     
 }
 
 
-if(window.location.host == "swisscows.com"){
-    console.log("ЭТО COW");
+if (window.location.host == "swisscows.com") {
+    console.log("ЭТО Swisscows");
     query = document.getElementsByClassName("input-search")[0].value;
     
 }
 
-if(window.location.host == "peekier.com"){
-    console.log("ЭТО peekier");
+if (window.location.host == "peekier.com") {
+    console.log("ЭТО Peekier");
     query = document.getElementById('text-measure').innerText;
     
 }
 
-if(window.location.host == "gigablast.com"){
-    console.log("ЭТО gigablast");
+if (window.location.host == "gigablast.com") {
+    console.log("ЭТО Gigablast");
     query = document.getElementById('q').value;
     
+}
+
+if (window.location.host == "yandex.ru") {
+    onsole.log("ЭТО Yandex");
+    query = document.getElementById('uniq16448413328451').value;
 }
 
 console.log(query);

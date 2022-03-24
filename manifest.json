@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Answerius",
-  "version": "1.1.0.0",
-  "description":"New anon search engine",
+  "version": "1.1.1.0",
+  "description":"Даёт Вам больше контроля над своей приватностью. Не позвольте никому сохранять Ваши запросы.",
   "icons": {
     "16": "images/logo_16.png"
   },
@@ -12,7 +12,7 @@
         "content.js"
       ],
       "matches": [ 
-         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*"
+         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*", "https://swisscows.com/web?*",  "http://gigablast.com/*"
       ],
       "css": [ 
         "buttons.css" 

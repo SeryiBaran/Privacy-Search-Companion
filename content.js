@@ -45,6 +45,11 @@ if (window.location.host == "metager.org") {
     query = document.getElementsByClassName("form-control")[0].value;
 }
 
+if (window.location.host == "www.google.com") {
+    console.log("ЭТО Google");
+    query = document.getElementsByClassName("gLFyf gsfi")[1].value;
+}
+
 console.log(query);
 
 let allButtons = document.createElement("div");

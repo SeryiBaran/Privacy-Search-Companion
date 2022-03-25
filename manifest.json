@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Answerius",
-  "version": "1.1.1.1",
+  "version": "1.2.1.0",
   "description":"Даёт Вам больше контроля над своей приватностью. Не позвольте никому сохранять Ваши запросы.",
   "icons": {
     "16": "images/logo_16.png"
@@ -12,7 +12,7 @@
         "content.js"
       ],
       "matches": [ 
-         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*", "https://swisscows.com/web?*",  "http://gigablast.com/*", "https://yandex.ru/*"
+         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*", "https://swisscows.com/web?*", "https://yandex.ru/*", "https://metager.org/*"
       ],
       "css": [ 
         "buttons.css" 

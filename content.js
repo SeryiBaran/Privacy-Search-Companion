@@ -126,6 +126,7 @@ div5.className = "_buttons";
 e5.appendChild(document.createTextNode("Swiss"));
 div5.appendChild(e5);
 
+/*
 let div7 = document.createElement("div");
 let e7 = document.createElement("a");
 e7.href = "https://gigablast.com/search?c=main&qlangcountry=en-us&q=" + query;
@@ -135,6 +136,7 @@ div7.id = "_gigablast";
 div7.className = "_buttons";
 e7.appendChild(document.createTextNode("Gigablast"));
 div7.appendChild(e7);
+*/
 
 let div8 = document.createElement("div");
 let e8 = document.createElement("a");

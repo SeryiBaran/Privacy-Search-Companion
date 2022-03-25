@@ -1,109 +1,58 @@
-#brave {
-    position:fixed;
-    bottom: 10px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-#lukol {
-    position:fixed;
-    bottom: 50px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-#ddg { 
-    position:fixed;
-    bottom: 90px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-#SearXNG {
-    position:fixed;
-    bottom: 130px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-#swisscows { 
-    position:fixed;
-    bottom: 170px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-#gigablast {   
-    position:fixed;
-    bottom: 210px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-#metager {
-    position:fixed;
-    bottom: 250px;
-    left: 80%;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-}
-
-#brave a, #lukol a, #ddg a, #SearXNG a, #swisscows a, #gigablast a, #metager a {
-    font-weight: 900;
-}
-
-.button.disabled {
-    opacity: 0.65; 
+._button.disabled {
+    opacity: 0.65;
     cursor: not-allowed;
 }
-  
-.buttons {
+
+._buttons {
     display: block;
     width: 250px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 8px;
+    width: 100px !important;
+    border-radius: 5px;
 }
-  
-.button, .button.disabled:hover { 
+
+._button,
+._button.disabled:hover {
     display: block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    border:1px solid #25729a; 
-    -webkit-border-radius: 3px; 
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 10px 10px 10px 10px; 
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
-    text-align: center; 
-    color: #FFFFFF; 
-    background-color: #3880AC;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3880AC), color-stop(100%, #0462AC));
-    background-image: -webkit-linear-gradient(top, #3880AC, #0462AC);
-    background-image: -moz-linear-gradient(top, #3880AC, #0462AC);
-    background-image: -ms-linear-gradient(top, #3880AC, #0462AC);
-    background-image: -o-linear-gradient(top, #3880AC, #0462AC);
-    background-image: linear-gradient(top, #3880AC, #0462AC);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3880AC, endColorstr=#0462AC);
+    text-decoration: none !important;
+    border-radius: 3px !important;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 400ms;
+    transition-property: background, color;
+    color: #fff !important;
+    background-color: #6200ee;
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    border: 0;
+    border-radius: 0.25rem;
+    cursor: pointer;
 }
-  
-.button:hover {
-    border:1px solid #1c5675;
-    border-color: rgb(0, 0, 0);
-    background-color: #54BCDC;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54BCDC), color-stop(100%, #133d5b));
-    background-image: -webkit-linear-gradient(top, #54BCDC, #133d5b);
-    background-image: -moz-linear-gradient(top, #54BCDC, #133d5b);
-    background-image: -ms-linear-gradient(top, #54BCDC, #133d5b);
-    background-image: -o-linear-gradient(top, #54BCDC, #133d5b);
-    background-image: linear-gradient(top, #54BCDC, #133d5b);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#54BCDC, endColorstr=#133d5b);
+
+a._button {
+    font-weight: 900;
+}
+
+._button:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+._all_buttons {
+    position: fixed;
+    right: 15%;
+    bottom: 8px;
+    transition: bottom 400ms;
+}
+
+._close_button {
+    width: 100px;
+    border: 0;
+    background-color: #000;
+    color: #fff !important;
+    cursor: pointer;
+    padding: 5px;
 }

@@ -12,7 +12,7 @@
         "content.js"
       ],
       "matches": [ 
-         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*", "https://swisscows.com/web?*",  "http://gigablast.com/*", "https://yandex.ru/*", "https://metager.org/*"
+         "https://www.lukol.com/*", "https://duckduckgo.com/*", "https://searx.be/*", "https://search.brave.com/*", "https://www.google.ru/search?*", "https://www.google.com/search?*", "https://swisscows.com/web?*", "https://yandex.ru/*", "https://metager.org/*"
       ],
       "css": [ 
         "buttons.css" 

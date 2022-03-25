@@ -45,6 +45,11 @@ if (window.location.host == "metager.org") {
     query = document.getElementsByClassName("form-control")[0].value;
 }
 
+if (window.location.host == "www.google.com") {
+    console.log("ЭТО Google");
+    query = document.getElementsByClassName("gLFyf gsfi")[1].value;
+}
+
 console.log(query);
 
 let allButtons = document.createElement("div");
@@ -126,7 +131,7 @@ div5.className = "_buttons";
 e5.appendChild(document.createTextNode("Swiss"));
 div5.appendChild(e5);
 
-/*
+/** 
 let div7 = document.createElement("div");
 let e7 = document.createElement("a");
 e7.href = "https://gigablast.com/search?c=main&qlangcountry=en-us&q=" + query;
@@ -143,7 +148,7 @@ let e8 = document.createElement("a");
 e8.href = "https://metager.org/meta/meta.ger3?eingabe=" + query;
 e8.title = "MetaGer";
 e8.className = "_button";
-div8.id = "_metager";
+div8.id = "_metager";   
 div8.className = "_buttons";
 e8.appendChild(document.createTextNode("MetaGer"));
 div8.appendChild(e8);
@@ -155,5 +160,5 @@ buttonsContainer.appendChild(div2);
 buttonsContainer.appendChild(div3);
 buttonsContainer.appendChild(div4);
 buttonsContainer.appendChild(div5);
-buttonsContainer.appendChild(div7);
+// buttonsContainer.appendChild(div7);
 buttonsContainer.appendChild(div8);

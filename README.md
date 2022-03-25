@@ -25,12 +25,10 @@
 
 <h2>Пример использования:</h2>
 
-![image](images/screen1.png)
+![image](images/screen3.png)
 
 **Нажимаем поисковик, который хотим использовать** 
 
-![image](images/screen2.png)
-![image](images/screen3.png)
 ![image](images/screen4.png)
 
 **Итоговый результат**

@@ -30,5 +30,7 @@
 **Нажимаем поисковик, который хотим использовать** 
 
 ![image](images/screen2.png)
+![image](images/screen3.png)
+![image](images/screen4.png)
 
 **Итоговый результат**

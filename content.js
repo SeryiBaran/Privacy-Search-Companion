@@ -1,5 +1,5 @@
 let query = "";
-// простейшая функция для определения текущего поисковика 
+// простейшая функция для определения текущего поисковика
 if (window.location.host == "search.brave.com") {
     console.log("ЭТО Brave!");
     query = document.getElementById("searchbox").value;
@@ -52,6 +52,13 @@ if (window.location.host == "www.google.com") {
 
 console.log(query);
 
+(() => {
+    const pingButtons = document.getElementById("_all_buttons");
+    if (pingButtons) {
+        pingButtons.parentNode.removeChild(pingButtons);
+    }
+})();
+
 let allButtons = document.createElement("div");
 allButtons.id = "_all_buttons";
 allButtons.className = "_all_buttons";
@@ -66,20 +73,17 @@ let closed = false;
 close.innerText = "Свернуть";
 close.id = "_close_button";
 close.className = "_close_button _button";
-close.addEventListener(
-    "click",
-    () => {
-        if (!closed) {
-            allButtons.style.bottom = `-${buttonsContainer.offsetHeight}px`;
-            closed = true;
-        } else {
-            allButtons.style.bottom = null;
-            closed = false;
-        }
-        close.innerText = closed ? "Развернуть" : "Свернуть";
-    },
-    false
-);
+function toogleButtons() {
+    if (!closed) {
+        allButtons.style.bottom = `-${buttonsContainer.offsetHeight}px`;
+        closed = true;
+    } else {
+        allButtons.style.bottom = null;
+        closed = false;
+    }
+    close.innerText = closed ? "Развернуть" : "Свернуть";
+}
+close.addEventListener("click", toogleButtons, false);
 
 let div = document.createElement("div");
 let e = document.createElement("a");
@@ -148,7 +152,7 @@ let e8 = document.createElement("a");
 e8.href = "https://metager.org/meta/meta.ger3?eingabe=" + query;
 e8.title = "MetaGer";
 e8.className = "_button";
-div8.id = "_metager";   
+div8.id = "_metager";
 div8.className = "_buttons";
 e8.appendChild(document.createTextNode("MetaGer"));
 div8.appendChild(e8);
@@ -162,3 +166,17 @@ buttonsContainer.appendChild(div4);
 buttonsContainer.appendChild(div5);
 // buttonsContainer.appendChild(div7);
 buttonsContainer.appendChild(div8);
+
+browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.message === "toogleHidden") toogleHidden(request.text);
+    if (request.message === "sendResponse")
+        sendResponse(allButtons.classList.contains("_all_buttons-hidden"));
+});
+
+async function toogleHidden(text) {
+    if (text === "hide") {
+        allButtons.classList.add("_all_buttons-hidden");
+    } else if (text === "show") {
+        allButtons.classList.remove("_all_buttons-hidden");
+    }
+}

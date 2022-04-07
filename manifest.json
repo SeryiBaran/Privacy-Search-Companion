@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Answerius",
   "version": "2.0.0.0",
-  "description": "Даёт Вам больше контроля над своей приватностью. Не позвольте никому сохранять Ваши запросы.",
+  "description": "Gives you more control over your privacy. Don't let anyone keep your requests.",
   "icons": {
     "16": "images/logo_16.png"
   },

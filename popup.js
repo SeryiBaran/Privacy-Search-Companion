@@ -11,8 +11,8 @@ browser.tabs.query({ currentWindow: true }, function (tabs) {
 				window.localStorage.setItem("fullhidden", response);
 				toogleHiddenButton.innerText =
 					window.localStorage.getItem("fullhidden") == "true"
-						? "Показать"
-						: "Скрыть";
+						? "Show"
+						: "Hide";
 			}
 		);
 	}
@@ -25,8 +25,8 @@ toogleHiddenButton.onclick = () => {
 
 	toogleHiddenButton.innerText =
 		window.localStorage.getItem("fullhidden") == "true"
-			? "Показать"
-			: "Скрыть";
+			? "Show"
+			: "Hide";
 	browser.tabs.query({ currentWindow: true }, function (tabs) {
 		for (let tab in tabs) {
 			browser.tabs.sendMessage(

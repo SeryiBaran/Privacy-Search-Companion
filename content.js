@@ -70,7 +70,7 @@ buttonsContainer.className = "_buttons_container";
 
 let close = document.createElement("button");
 let closed = false;
-close.innerText = "Свернуть";
+close.innerText = "Hide";
 close.id = "_close_button";
 close.className = "_close_button _button";
 function toogleButtons() {
@@ -81,7 +81,7 @@ function toogleButtons() {
         allButtons.style.bottom = null;
         closed = false;
     }
-    close.innerText = closed ? "Развернуть" : "Свернуть";
+    close.innerText = closed ? "Show" : "Hide";
 }
 close.addEventListener("click", toogleButtons, false);
 

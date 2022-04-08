@@ -85,6 +85,7 @@ function toogleButtons() {
 }
 close.addEventListener("click", toogleButtons, false);
 
+// Brave Search
 let div = document.createElement("div");
 let e = document.createElement("a");
 e.href = "https://search.brave.com/search?q=" + query;
@@ -95,6 +96,7 @@ div.className = "_buttons";
 e.appendChild(document.createTextNode("Brave"));
 div.appendChild(e);
 
+// Lukol
 let div2 = document.createElement("div");
 let e2 = document.createElement("a");
 e2.href = "https://www.lukol.com/s.php?q=" + query;
@@ -105,6 +107,7 @@ div2.className = "_buttons";
 e2.appendChild(document.createTextNode("Lukol"));
 div2.appendChild(e2);
 
+// DuckDuckGo
 let div3 = document.createElement("div");
 let e3 = document.createElement("a");
 e3.href = "https://duckduckgo.com/?t=ffab&q=" + query;
@@ -115,6 +118,7 @@ div3.className = "_buttons";
 e3.appendChild(document.createTextNode("DDG"));
 div3.appendChild(e3);
 
+// SearXNG
 let div4 = document.createElement("div");
 let e4 = document.createElement("a");
 e4.href = "https://searx.be/search?q=" + query;
@@ -125,6 +129,7 @@ div4.className = "_buttons";
 e4.appendChild(document.createTextNode("SearXNG"));
 div4.appendChild(e4);
 
+// Swisscows
 let div5 = document.createElement("div");
 let e5 = document.createElement("a");
 e5.href = "https://swisscows.com/web?query=" + query;
@@ -135,18 +140,7 @@ div5.className = "_buttons";
 e5.appendChild(document.createTextNode("Swiss"));
 div5.appendChild(e5);
 
-/** 
-let div7 = document.createElement("div");
-let e7 = document.createElement("a");
-e7.href = "https://gigablast.com/search?c=main&qlangcountry=en-us&q=" + query;
-e7.title = "Gigablast";
-e7.className = "_button";
-div7.id = "_gigablast";
-div7.className = "_buttons";
-e7.appendChild(document.createTextNode("Gigablast"));
-div7.appendChild(e7);
-*/
-
+// MetaGer
 let div8 = document.createElement("div");
 let e8 = document.createElement("a");
 e8.href = "https://metager.org/meta/meta.ger3?eingabe=" + query;
@@ -164,7 +158,6 @@ buttonsContainer.appendChild(div2);
 buttonsContainer.appendChild(div3);
 buttonsContainer.appendChild(div4);
 buttonsContainer.appendChild(div5);
-// buttonsContainer.appendChild(div7);
 buttonsContainer.appendChild(div8);
 
 browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {

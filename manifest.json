@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "ZeroEyes",
-  "version": "2.0.2.0",
+  "name": "Privacy Search Companion",
+  "version": "2.1",
   "description": "Gives you more control over your privacy. Don't let anyone keep your requests.",
   "icons": {
     "48": "images/logo48.webp"
@@ -32,7 +32,7 @@
     "webRequestBlocking"
   ],
   "browser_action": {
-    "default_title": "ZeroEyes",
+    "default_title": "Privacy Search Companion",
     "default_popup": "popup.html"
   }
 }

@@ -1,78 +1,116 @@
 let query = "";
-// простейшая функция для определения текущего поисковика
-if (window.location.host == "search.brave.com") {
-    console.log("ЭТО Brave!");
-    query = document.getElementById("searchbox").value;
+
+const linksData = [
+    {
+        id: "brave",
+        linkText: "Brave",
+        linkTitle: "Brave Search",
+        searchUrl: "https://search.brave.com/search?q=",
+    },
+    {
+        id: "lukol",
+        linkText: "Lukol",
+        linkTitle: "Lukol",
+        searchUrl: "https://www.lukol.com/s.php?q=",
+    },
+    {
+        id: "ddg",
+        linkText: "DDG",
+        linkTitle: "DuckDuckGo",
+        searchUrl: "https://duckduckgo.com/?t=ffab&q=",
+    },
+    {
+        id: "SearXNG",
+        linkText: "SearXNG",
+        linkTitle: "SearXNG",
+        searchUrl: "https://searx.be/search?q=",
+    },
+    {
+        id: "swisscows",
+        linkText: "Swiss",
+        linkTitle: "Swisscows",
+        searchUrl: "https://swisscows.com/web?query=",
+    },
+    {
+        id: "metager",
+        linkText: "MetaGer",
+        linkTitle: "MetaGer",
+        searchUrl: "https://metager.org/meta/meta.ger3?eingabe=",
+    },
+];
+
+switch (window.location.host) {
+    case "search.brave.com":
+        console.log("ЭТО Brave!");
+        query = document.getElementById("searchbox").value;
+        break;
+
+    case "www.lukol.com":
+        console.log("ЭТО Lukol!");
+        query = document.getElementById("q").value;
+        break;
+
+    case "duckduckgo.com":
+        console.log("ЭТО DuckDuckGo!");
+        query = document.getElementById("search_form_input").value;
+        break;
+
+    case "searx.be":
+        console.log("ЭТО SearXNG!");
+        query = document.getElementById("q").value;
+        break;
+
+    case "swisscows.com":
+        console.log("ЭТО Swisscows!");
+        query = document.getElementsByClassName("input-search")[0].value;
+        break;
+
+    case "peekier.com":
+        console.log("ЭТО Peekier!");
+        query = document.getElementById("text-measure").innerText;
+        break;
+
+    case "gigablast.com":
+        console.log("ЭТО Gigablast!");
+        query = document.getElementById("q").value;
+        break;
+
+    case "yandex.ru":
+        onsole.log("ЭТО Yandex!");
+        query = document.getElementById("uniq16448413328451").value;
+        break;
+
+    case "metager.org":
+        console.log("ЭТО MetaGer!");
+        query = document.getElementsByClassName("form-control")[0].value;
+        break;
+
+    case "www.google.com":
+        console.log("ЭТО Google!");
+        query = document.getElementsByClassName("gLFyf gsfi")[1].value;
+        break;
 }
 
-if (window.location.host == "www.lukol.com") {
-    console.log("ЭТО Lukol!");
-    query = document.getElementById("q").value;
+const alreadyExists = !!document.getElementById("_all_buttons");
+if (alreadyExists) {
+    alreadyExists.parentNode.removeChild(alreadyExists);
 }
 
-if (window.location.host == "duckduckgo.com") {
-    console.log("ЭТО DuckDuckGo!");
-    query = document.getElementById("search_form_input").value;
-}
-
-if (window.location.host == "searx.be") {
-    console.log("ЭТО SearXNG!");
-    query = document.getElementById("q").value;
-}
-
-if (window.location.host == "swisscows.com") {
-    console.log("ЭТО Swisscows!");
-    query = document.getElementsByClassName("input-search")[0].value;
-}
-
-if (window.location.host == "peekier.com") {
-    console.log("ЭТО Peekier!");
-    query = document.getElementById("text-measure").innerText;
-}
-
-if (window.location.host == "gigablast.com") {
-    console.log("ЭТО Gigablast!");
-    query = document.getElementById("q").value;
-}
-
-if (window.location.host == "yandex.ru") {
-    onsole.log("ЭТО Yandex!");
-    query = document.getElementById("uniq16448413328451").value;
-}
-
-if (window.location.host == "metager.org") {
-    console.log("ЭТО MetaGer!");
-    query = document.getElementsByClassName("form-control")[0].value;
-}
-
-if (window.location.host == "www.google.com") {
-    console.log("ЭТО Google!");
-    query = document.getElementsByClassName("gLFyf gsfi")[1].value;
-}
-
-console.log(query);
-
-(() => {
-    const pingButtons = document.getElementById("_all_buttons");
-    if (pingButtons) {
-        pingButtons.parentNode.removeChild(pingButtons);
-    }
-})();
-
-let allButtons = document.createElement("div");
+const allButtons = document.createElement("div");
 allButtons.id = "_all_buttons";
 allButtons.className = "_all_buttons";
 document.body.appendChild(allButtons);
 
-let buttonsContainer = document.createElement("div");
+const buttonsContainer = document.createElement("div");
 buttonsContainer.id = "_buttons_container";
 buttonsContainer.className = "_buttons_container";
 
-let close = document.createElement("button");
+const closeButton = document.createElement("button");
 let closed = false;
-close.innerText = "Hide";
-close.id = "_close_button";
-close.className = "_close_button _button";
+closeButton.innerText = "Hide";
+closeButton.id = "_close_button";
+closeButton.className = "_close_button _button";
+
 function toogleButtons() {
     if (!closed) {
         allButtons.style.bottom = `-${buttonsContainer.offsetHeight}px`;
@@ -81,84 +119,30 @@ function toogleButtons() {
         allButtons.style.bottom = null;
         closed = false;
     }
-    close.innerText = closed ? "Show" : "Hide";
+    closeButton.innerText = closed ? "Show" : "Hide";
 }
-close.addEventListener("click", toogleButtons, false);
 
-// Brave Search
-let div = document.createElement("div");
-let e = document.createElement("a");
-e.href = "https://search.brave.com/search?q=" + query;
-e.title = "Brave Search";
-e.className = "_button";
-div.id = "_brave";
-div.className = "_buttons";
-e.appendChild(document.createTextNode("Brave"));
-div.appendChild(e);
+closeButton.addEventListener("click", toogleButtons, false);
 
-// Lukol
-let div2 = document.createElement("div");
-let e2 = document.createElement("a");
-e2.href = "https://www.lukol.com/s.php?q=" + query;
-e2.title = "Lukol";
-e2.className = "_button";
-div2.id = "_lukol";
-div2.className = "_buttons";
-e2.appendChild(document.createTextNode("Lukol"));
-div2.appendChild(e2);
+function createSearchButton({ id, linkText, linkTitle, searchUrl }) {
+    const div = document.createElement("div");
+    const link = document.createElement("a");
+    link.href = searchUrl + query;
+    link.title = linkTitle;
+    link.className = "_button";
+    div.id = `_${id}`;
+    div.className = "_buttons";
+    link.appendChild(document.createTextNode(linkText));
+    div.appendChild(link);
+    return div;
+}
 
-// DuckDuckGo
-let div3 = document.createElement("div");
-let e3 = document.createElement("a");
-e3.href = "https://duckduckgo.com/?t=ffab&q=" + query;
-e3.title = "DuckDuckGo";
-e3.className = "_button";
-div3.id = "_ddg";
-div3.className = "_buttons";
-e3.appendChild(document.createTextNode("DDG"));
-div3.appendChild(e3);
-
-// SearXNG
-let div4 = document.createElement("div");
-let e4 = document.createElement("a");
-e4.href = "https://searx.be/search?q=" + query;
-e4.title = "SearXNG";
-e4.className = "_button";
-div4.id = "_SearXNG";
-div4.className = "_buttons";
-e4.appendChild(document.createTextNode("SearXNG"));
-div4.appendChild(e4);
-
-// Swisscows
-let div5 = document.createElement("div");
-let e5 = document.createElement("a");
-e5.href = "https://swisscows.com/web?query=" + query;
-e5.title = "Swisscows";
-e5.className = "_button";
-div5.id = "_swisscows";
-div5.className = "_buttons";
-e5.appendChild(document.createTextNode("Swiss"));
-div5.appendChild(e5);
-
-// MetaGer
-let div8 = document.createElement("div");
-let e8 = document.createElement("a");
-e8.href = "https://metager.org/meta/meta.ger3?eingabe=" + query;
-e8.title = "MetaGer";
-e8.className = "_button";
-div8.id = "_metager";
-div8.className = "_buttons";
-e8.appendChild(document.createTextNode("MetaGer"));
-div8.appendChild(e8);
+const linksNodes = linksData.map(createSearchButton);
 
 allButtons.appendChild(close);
 allButtons.appendChild(buttonsContainer);
-buttonsContainer.appendChild(div);
-buttonsContainer.appendChild(div2);
-buttonsContainer.appendChild(div3);
-buttonsContainer.appendChild(div4);
-buttonsContainer.appendChild(div5);
-buttonsContainer.appendChild(div8);
+
+linksNodes.forEach((node) => buttonsContainer.appendChild(node));
 
 browser.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.message === "toogleHidden") toogleHidden(request.text);

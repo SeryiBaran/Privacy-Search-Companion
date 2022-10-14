@@ -17,7 +17,8 @@ browser.tabs.query({ currentWindow: true }, function (tabs) {
 		);
 	}
 });
-
+		// TODO:
+		// Try to use browser.storage.local... 
 toogleHiddenButton.onclick = () => {
 	window.localStorage.getItem("fullhidden") == "true"
 		? window.localStorage.setItem("fullhidden", false)

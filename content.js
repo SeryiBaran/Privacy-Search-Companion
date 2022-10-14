@@ -74,7 +74,8 @@ switch (window.location.host) {
         console.log("ЭТО Gigablast!");
         query = document.getElementById("q").value;
         break;
-
+        // TODO: 
+        // Fix Issue where Yandex didn't show our buttons on search page
     case "yandex.ru":
         onsole.log("ЭТО Yandex!");
         query = document.getElementById("uniq16448413328451").value;

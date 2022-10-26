@@ -8,7 +8,7 @@
   },
   "content_scripts": [
     {
-      "js": ["content.js"],
+      "js": ["./src/content.js"],
       "matches": [
         "https://www.lukol.com/s.php?*",
         "https://duckduckgo.com/*",
@@ -400,7 +400,7 @@
         "https://yandex.ru/*",
         "https://metager.org/*"
       ],
-      "css": ["buttons.css"]
+      "css": ["./src/buttons.css"]
     }
   ],
   "permissions": [

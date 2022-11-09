@@ -4,15 +4,15 @@
   "version": "2.1",
   "description": "Gives you more control over your privacy. Don't let anyone keep your requests.",
   "icons": {
-    "48": "images/logo48.webp"
+    "48": "./images/logo48.webp"
   },
   "browser_action": {
     "default_title": "Privacy Search Companion",
-    "default_popup": "popup.html"
+    "default_popup": "./popup.html"
   },
   "content_scripts": [
     {
-      "js": ["./src/content.js"],
+      "js": ["./js/content.js"],
       "matches": [
         "https://www.lukol.com/s.php?*",
         "https://duckduckgo.com/*",
@@ -404,11 +404,12 @@
         "https://yandex.ru/*",
         "https://metager.org/*"
       ],
-      "css": ["./src/buttons.css"]
+      "css": ["./css/buttons.css"]
     }
   ],
   "permissions": [
     "tabs",
-    "storage"
+    "storage",
+    "unlimitedStorage"
   ]
 }

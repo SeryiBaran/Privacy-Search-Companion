@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/logo.png" alt="Logo" />
+  <img src="extension/assets/logo.png" alt="Logo" />
 </p>
 <p align="center">
   <a href="https://addons.mozilla.org/ru/firefox/addon/privacy-companion/"><img src="https://img.shields.io/amo/users/privacy-companion?style=flat-square" alt="Badge" /></a>
@@ -15,19 +15,37 @@
 
 - **DuckDuckGo**
 - **Swisscows**
-- **SearXNG**
 - **Lukol**
 - **Brave Search**
 - **MetaGer**
-<!-- - Peekier (Добавится в будущем) -->
-<!-- - Ecosia (Добавится в будущем) -->
 
-Пока не поддерживает такие поисковики как - **Peekier** и **некоторые другие**. В них вы просто не увидите кнопки для запроса в другие поисковики.
+Пока не поддерживает такие поисковики как **SearXNG**, **Peekier** и **Ecosia**. В них вы просто не увидите кнопки для запроса в другие поисковики.
 
-## Пример использования:
 
-![image](images/screen3.png)
-_Нажимаем поисковик, который хотим использовать_
+## Запуск для разработки
 
-![image](images/screen4.png)
-_Итоговый результат_
+P.S> Не забудьте про `npm install`.
+
+В первом окне терминала:
+
+```bash
+npm run dev
+```
+
+Во втором окне терминала:
+
+```bash
+npm run start:firefox
+```
+
+## Сборка
+
+P.S> Не забудьте про `npm install`.
+
+Выполняем команду:
+
+```bash
+npm run build
+```
+
+Затем сжимаем всё из директории extension в .zip файл.

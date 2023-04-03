@@ -18,7 +18,7 @@ export const searchesFrom: FromSearch[] = [
   {
     domainName: 'yandex',
     domainEndVariations: ['ru'],
-    params: 'search/?text=',
+    params: 'search/?*text=',
     selector: '.input__box input',
   },
   {
@@ -214,7 +214,7 @@ export const searchesFrom: FromSearch[] = [
       'cat',
       'xxx',
     ],
-    params: 'search?q=',
+    params: 'search?*q=',
     selector: 'input.gLFyf',
   },
 
@@ -222,36 +222,37 @@ export const searchesFrom: FromSearch[] = [
     selector: '#searchbox',
     domainName: 'search.brave',
     domainEndVariations: ['com'],
-    params: 'search?q=',
+    params: 'search?*q=',
   },
   {
     selector: '#q',
     domainName: 'lukol',
     domainEndVariations: ['com'],
-    params: 's.php?q=',
+    params: 's.php?*q=',
   },
   {
     selector: '#search_form_input',
     domainName: 'duckduckgo',
     domainEndVariations: ['com'],
-    params: '?q=',
+    params: '?*q=',
   },
-  {
-    selector: '#q',
-    domainName: 'searx',
-    domainEndVariations: ['be'],
-    params: 'search',
-  },
+  // тут теперь post запрос
+  // {
+  //   selector: '#q',
+  //   domainName: 'searx',
+  //   domainEndVariations: ['be'],
+  //   params: 'search',
+  // },
   {
     domainName: 'swisscows',
     domainEndVariations: ['com'],
-    params: 'web?query=',
+    params: 'web?*query=',
     selector: '.input-search',
   },
   {
     domainName: 'metager',
     domainEndVariations: ['org'],
-    params: 'meta/meta.ger3?eingabe=',
+    params: 'meta/meta.ger3?*eingabe=',
     selector: '.form-control',
   },
 ]

@@ -6,7 +6,6 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import webfontDownload from 'vite-plugin-webfont-dl'
 import { isDev, port, r } from './scripts/utils'
 
 export const sharedConfig: UserConfig = {

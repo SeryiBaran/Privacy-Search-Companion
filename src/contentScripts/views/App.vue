@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { searchesFromByHosts, searchesTo } from '../../../searches'
 import { showed } from '~/logic/storage'
 
@@ -17,7 +18,7 @@ if (input != null)
 <template>
   <div
     v-if="searchTextValue"
-    class="right-10% z-100 leading-1em fixed bottom-0 m-5 flex select-none items-end gap-4 text-center font-sans text-[16px]"
+    class="z-100 leading-1em fixed bottom-0 right-[10%] m-5 flex select-none items-end gap-4 text-center font-sans text-[16px]"
   >
     <div
       v-if="showed"

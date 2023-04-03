@@ -5,7 +5,7 @@
   <a href="https://addons.mozilla.org/ru/firefox/addon/privacy-companion/"><img src="https://img.shields.io/amo/users/privacy-companion?style=flat-square" alt="Badge" /></a>
 </p>
 
-[![Mozilla Add-on](https://img.shields.io/amo/v/privacy-companion)](https://addons.mozilla.org/en-US/firefox/addon/privacy-companion)
+[<img src="src/assets/firefox-add-ons.png" title="Firefox Add-ons" width="auto" height="47" />](https://addons.mozilla.org/ru/firefox/addon/privacy-companion)
 
 <h1 align="center">Privacy Search Companion</h1>
 

@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="extension/assets/logo.png" alt="Logo" />
+  <img src="src/assets/logo.png" alt="Logo" />
 </p>
 <p align="center">
-  <a href="https://addons.mozilla.org/ru/firefox/addon/privacy-companion/"><img src="https://img.shields.io/amo/users/privacy-companion?style=flat-square" alt="Badge" /></a>
+  <a href="https://addons.mozilla.org/ru/firefox/addon/privacy-companion/"><img src="https://img.shields.io/amo/users/privacy-search-companion?style=flat-square" alt="Badge" /></a>
 </p>
 
 <h1 align="center">Privacy Search Companion</h1>

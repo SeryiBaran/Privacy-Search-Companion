@@ -43,7 +43,7 @@ function openOptionsPage() {
     </p>
     <p class="m-0 text-sm">
       <a href="https://seryibaran.github.io/PSC-site">Official website</a>
-      / <a href="https://github.com/Erghel/Privacy-Search-Companion">Github</a>
+      / <a href="https://github.com/SeryiBaran/Privacy-Search-Companion">Github</a>
     </p>
   </div>
 </template>

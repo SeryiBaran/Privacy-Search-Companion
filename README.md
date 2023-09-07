@@ -50,4 +50,4 @@ P.S> Не забудьте про `npm install`.
 npm run build
 ```
 
-Затем сжимаем всё из директории extension в .zip файл.
+Затем берем файл `extension.zip` из папки `extension`. Если гео там нет, сжимаем всё из директории `extension` вручную в .zip файл.
